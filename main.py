@@ -88,8 +88,8 @@ def mensagem_personalizada1(nome):
     else:
         return f"Desculpe, não consegui encontrar informações sobre {nome}."
         
-print(mensagem_personalizada1('Phylipe Phyton'))
-print(mensagem_personalizada1('Maria Panda'))
-print(mensagem_personalizada1('Joao Almeida'))
-print(mensagem_personalizada1('Lia Py'))
+print(mensagem_personalizada2('Phylipe Phyton'))
+print(mensagem_personalizada2('Maria Panda'))
+print(mensagem_personalizada2('Joao Almeida'))
+print(mensagem_personalizada2('Lia Py'))
 
