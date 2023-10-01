@@ -57,17 +57,17 @@ users = pd.concat([user_3941, user_3942, user_3943, user_3944])
 users = users.fillna(0)
 users = users.dropna()
 
-# Aplique uma função personalizada aos dados
+# Aplicando uma função personalizada aos dados
 def double_balance(balance):
     return balance * 2
 
 users['balance'] = users['balance'].apply(double_balance)
 
-# Salve o DataFrame em um arquivo CSV
+# Salvando o DataFrame em um arquivo CSV
 users.to_csv('users.csv', index=False)
 
     
-# Crie uma função que personalize a mensagem para cada usuário
+# Função que personalize a mensagem para cada usuário
 def mensagem_personalizada(nome):
     if nome in users['name'].tolist():
         info = users.loc[users['name'] == nome].iloc[0]
@@ -75,7 +75,7 @@ def mensagem_personalizada(nome):
     else:
         return f"Desculpe, não consegui encontrar informações sobre {nome}\nInvista seu dinheiro para garantir o futuro!"
 
-# Use a função para gerar mensagens personalizadas para cada usuário
+# Função para gerar mensagens personalizadas para cada usuário
 print(mensagem_personalizada('Phylipe Phyton'))
 print(mensagem_personalizada('Maria Panda'))
 print(mensagem_personalizada('Joao Almeida'))
