@@ -81,7 +81,7 @@ print(mensagem_personalizada('Maria Panda'))
 print(mensagem_personalizada('Joao Almeida'))
 print(mensagem_personalizada('Lia Py'))
 
-def mensagem_personalizada1(nome):
+def mensagem_personalizada2(nome):
     if nome in users['name'].tolist():
         info = users.loc[users['name'] == nome].iloc[0]
         return f"Olá {nome}, Invista agora e garanta seu futuro financeiro. \nCondições especiais somente para você, aproveite!"
